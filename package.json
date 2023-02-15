@@ -28,11 +28,6 @@
     "predoc:serve": "npm run doc",
     "doc:serve": "serve"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test && npm run doc && git add . --all"
-    }
-  },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.8.7",
