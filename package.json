@@ -58,6 +58,6 @@
     "serve": "^11.2.0"
   },
   "peerDependencies": {
-    "ramda": "^0.26.1"
+    "ramda": ">=0.26.1"
   }
 }
