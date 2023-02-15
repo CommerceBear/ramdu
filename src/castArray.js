@@ -1,7 +1,6 @@
-import { both, when, of } from 'ramda';
+import { when, of } from 'ramda';
 
 import isNot from './isNot';
-import isNotNil from './isNotNil';
 
 /**
  * Forces an argument to be of type Array when is not undefined
@@ -13,8 +12,8 @@ import isNotNil from './isNotNil';
  * @example
  * castArray('a'); // ['a']
  * castArray(['a']); // ['a']
- * castArray(undefined); // undefined
+ * castArray(undefined); // [undefined]
  */
-const castArray = when(both(isNot(Array), isNotNil), of);
+const castArray = when(isNot(Array), of);
 
 export default castArray;
